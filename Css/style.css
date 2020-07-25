@@ -18,7 +18,7 @@ body {
 
 .navbar {
     height: 70px;
-    z-index: 2;
+    z-index: 11;
     top: 0;
     background: #ffffff;
     position: fixed;
@@ -185,7 +185,6 @@ body {
     line-height: 59px;
     text-transform: uppercase;
     color: #ffffff;
-    width: 373px;
 }
 
 .content h3 {
@@ -450,6 +449,75 @@ body {
     margin-top: 1rem;
 }
 
+label {
+    font-family: var(--major-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.card {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    border-radius: 0;
+    border: 1px solid var(--color-2);
+}
+
+#footer {
+    background-image: url("/img/footer-bg.png");
+    margin-top: 1.2rem;
+}
+
+.mycustom input[type=text] {
+    border: none;
+    padding-right: 123px;
+}
+
+.news {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mycustom .input-group-prepend {
+    position: absolute;
+    right: 2px;
+    top: 1px;
+    bottom: 1px;
+    z-index: 9;
+}
+
+.btn-4 {
+    background: var(--color-1);
+    border: 1px solid var(--color-1) !important;
+}
+
+.bt-4:active {
+    background-color: var(--color-1) !important;
+}
+
+.btn-4:hover {
+    background: var(--color-1) !important;
+    color: #ffffff;
+}
+
+.fot-img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fot {
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+}
+
 @media screen and (min-width: 980px) {
     .hero {
         width: 100%
@@ -459,6 +527,9 @@ body {
 @media screen and (max-width: 640px) {
     .navbar-light .navbar-nav .nav-link:hover {
         text-decoration: none;
+    }
+    .navbar-light .navbar-nav .nav-link:hover {
+        border: none;
     }
     .hero {
         top: 65%;
@@ -499,6 +570,12 @@ body {
         padding: 2px 13px;
         width: 136px;
         margin-bottom: .5rem;
+    }
+    .btn-form {
+        width: 136px;
+        border-radius: 5px !important;
+        font-size: 12px !important;
+        line-height: 15px !important;
     }
     .content {
         padding: 10px;
@@ -618,5 +695,13 @@ body {
         font-size: 12px;
         line-height: 15px;
         margin-top: 1rem;
+    }
+    .car-img,
+    .view,
+    .carousel-item {
+        height: 50vh;
+    }
+    .news {
+        width: 100%;
     }
 }
