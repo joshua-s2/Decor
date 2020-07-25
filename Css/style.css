@@ -17,7 +17,6 @@ body {
 /* Nav */
 
 .navbar {
-    height: 70px;
     z-index: 11;
     top: 0;
     background: #ffffff;
